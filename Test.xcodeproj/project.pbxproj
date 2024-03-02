@@ -10,7 +10,9 @@
 		B635C87C2B929B3900B5CDF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B635C87B2B929B3900B5CDF7 /* AppDelegate.swift */; };
 		B635C87E2B929B3900B5CDF7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B635C87D2B929B3900B5CDF7 /* ViewController.swift */; };
 		B635C8802B929B3B00B5CDF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B635C87F2B929B3B00B5CDF7 /* Assets.xcassets */; };
-		B635C8832B929B3B00B5CDF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B635C8812B929B3B00B5CDF7 /* Main.storyboard */; };
+		B635C88B2B929C8D00B5CDF7 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B635C88A2B929C8D00B5CDF7 /* main.swift */; };
+		B635C88D2B92A21D00B5CDF7 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = B635C88C2B92A21D00B5CDF7 /* Webservice.swift */; };
+		B635C88F2B92A2ED00B5CDF7 /* Fact.swift in Sources */ = {isa = PBXBuildFile; fileRef = B635C88E2B92A2ED00B5CDF7 /* Fact.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,8 +20,10 @@
 		B635C87B2B929B3900B5CDF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B635C87D2B929B3900B5CDF7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B635C87F2B929B3B00B5CDF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B635C8822B929B3B00B5CDF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B635C8842B929B3B00B5CDF7 /* Test.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Test.entitlements; sourceTree = "<group>"; };
+		B635C88A2B929C8D00B5CDF7 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		B635C88C2B92A21D00B5CDF7 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
+		B635C88E2B92A2ED00B5CDF7 /* Fact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fact.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +59,10 @@
 				B635C87B2B929B3900B5CDF7 /* AppDelegate.swift */,
 				B635C87D2B929B3900B5CDF7 /* ViewController.swift */,
 				B635C87F2B929B3B00B5CDF7 /* Assets.xcassets */,
-				B635C8812B929B3B00B5CDF7 /* Main.storyboard */,
 				B635C8842B929B3B00B5CDF7 /* Test.entitlements */,
+				B635C88A2B929C8D00B5CDF7 /* main.swift */,
+				B635C88C2B92A21D00B5CDF7 /* Webservice.swift */,
+				B635C88E2B92A2ED00B5CDF7 /* Fact.swift */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -120,7 +126,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B635C8802B929B3B00B5CDF7 /* Assets.xcassets in Resources */,
-				B635C8832B929B3B00B5CDF7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,21 +138,13 @@
 			files = (
 				B635C87E2B929B3900B5CDF7 /* ViewController.swift in Sources */,
 				B635C87C2B929B3900B5CDF7 /* AppDelegate.swift in Sources */,
+				B635C88F2B92A2ED00B5CDF7 /* Fact.swift in Sources */,
+				B635C88D2B92A21D00B5CDF7 /* Webservice.swift in Sources */,
+				B635C88B2B929C8D00B5CDF7 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		B635C8812B929B3B00B5CDF7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B635C8822B929B3B00B5CDF7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		B635C8852B929B3B00B5CDF7 /* Debug */ = {
@@ -280,8 +277,9 @@
 				DEVELOPMENT_TEAM = 5V28CYKK4G;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSMainStoryboardFile = "";
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -307,8 +305,9 @@
 				DEVELOPMENT_TEAM = 5V28CYKK4G;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSMainStoryboardFile = "";
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
